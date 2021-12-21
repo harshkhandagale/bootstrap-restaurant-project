@@ -12,8 +12,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
 </head>
 
 <body>
@@ -21,29 +21,34 @@
 
     <nav class="navbar navbar-dark navbar-expand-sm  fixed-top">
         <div class="container">
-        
-<!-- here i ahve tried amny much combination at last i changed the code a little bit i.e i took it from bootstrap4 with bit of change -->
+
+            <!-- here i ahve tried amny much combination at last i changed the code a little bit i.e i took it from bootstrap4 with bit of change -->
             <div class="collapse" id="navbarToggleExternalContent">
                 <div class="bg-p p-4">
-                  <!-- <h5>Collapsed content</h5> -->
-                  <!-- <span>Toggleable via the navbar brand.</span> -->
+                    <!-- <h5>Collapsed content</h5> -->
+                    <!-- <span>Toggleable via the navbar brand.</span> -->
                 </div>
-              </div>
-              <nav class="navbar">
+            </div>
+            <nav class="navbar">
                 <div class="container">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Navbar" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Navbar"
+                        aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                 </div>
-              </nav>
+            </nav>
 
-            <a class="navbar-brand mr-auto" href="#">Ristorante Con Fusion</a>
+            <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" height="33" width="41"></a>
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item "><a class="nav-link active" href="#"> <span class="fa fa-home fa-lg"></span> Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info"></span> About</a></li>
+                    <li class="nav-item "><a class="nav-link active" href="#"> <span class="fa fa-home fa-lg"></span>
+                            Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info"></span>
+                            About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list"></span> Menu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card"></span> Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contactus.html"><span
+                                class="fa fa-address-card"></span> Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -60,7 +65,8 @@
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our
                         lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm">
+                <div class="col-12 col-sm align-self-center">
+                    <img src="img/logo.png" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -73,24 +79,37 @@
             <div class="col-12 col-sm-4 order-sm-last col-md-3  ">
                 <h3>Our Lipsmacking Culinary Creations</h3>
             </div>
+            <!-- col-sm will occupy remaining 8 columns og above for extra samll to large screen and col-md will occupy remaining 9 columns of above for medium screen -->
             <div class="col col-sm order-sm-first col-md">
-                <!-- col-sm will occupy remaining 8 columns og above for extra samll to large screen and col-md will occupy remaining 9 columns of above for medium screen -->
-                <h2>Uthappizza</h2>
-                <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives,
-                    ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                <div class="media">
+                    <img class="mr-3" src="img/buffet.png" alt="Generic placeholder image">
+                    <div class="media-body">
+                      <h5 class="mt-0">Media heading</h5>
+                      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    </div>
+                  </div>
             </div>
         </div>
 
 
         <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-4 col-md-3">
+            <div class="col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>This Month's Promotions</h3>
             </div>
             <div class="col col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers,
-                    six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just
-                    $19.99 per person </p>
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/buffet.png" alt="buffet">
+                    <div class="media-body">
+                        <h2 class="mt-0">Weekend Grand Buffet</h2>
+                        <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five
+                            different salads, six enticing appetizers,
+                            six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for
+                            just
+                            $19.99 per person
+                        </p>
+                    </div>
+                </div>
+
             </div>
         </div>
 
@@ -99,11 +118,16 @@
                 <h3>Meet our Culinary Specialists</h3>
             </div>
             <div class="col col-sm order-sm-first col-md">
-                <h2>Alberto Somayya</h2>
-                <h4>Executive Chef</h4>
-                <p>Award winning three-star Michelin chef with wide International experience having worked closely with
-                    whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion
-                    experiences. </p>
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/uthappizza.png" alt="Uthappizza">
+                    <div class="media-body">
+                        <h2 class="mt-0">Uthappizza</h2>
+                        <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and
+                            Italian pizza, topped with Cerignola olives, ripe vine
+                            cherry tomatoes, Vidalia onion, Guntur chillies and
+                            Buffalo Paneer.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -135,15 +159,20 @@
                 </div>
                 <div class="col-12 col-sm-4 align-self-center">
                     <div class="text-center ">
-                        <a class="btn btn-social-icon btn-google"   href="http://google.com/+"><span class="fa fa-google-plus"></span></a>&nbsp;
+                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><span
+                                class="fa fa-google-plus"></span></a>&nbsp;
 
-                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><span class="fa fa-facebook"></span></a>&nbsp;
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><span
+                                class="fa fa-facebook"></span></a>&nbsp;
 
-                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><span class="fa fa-linkedin"></span></a>&nbsp;
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><span
+                                class="fa fa-linkedin"></span></a>&nbsp;
 
-                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><span class="fa fa-twitter"></span></a>&nbsp;
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><span
+                                class="fa fa-twitter"></span></a>&nbsp;
 
-                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><span class="fa fa-youtube"></span></a>&nbsp;
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><span
+                                class="fa fa-youtube"></span></a>&nbsp;
 
                         <a class="btn btn-social-icon" href="mailto:"><span class="fa fa-envelope-o"></span></a>
                     </div>
