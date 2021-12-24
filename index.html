@@ -5,8 +5,11 @@
     <title>Ristorante Con Fusion</title>
     <meta charset="utf-8">
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
@@ -59,13 +62,16 @@
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
-                <div class="col-12 col-sm-6">
+                <div class="col-12 col-sm-5">
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our
                         lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm align-self-center">
+                <div class="col-12 col-sm-4 align-self-center">
                     <img src="img/logo.png" class="img-fluid">
+                </div>
+                <div class="col-12 col-sm-3  align-self-center">
+                    <button type="button" class="btn btn-lg bg-warning " data-target="#myform"><a href="#myform"  class="link-dark">Reserve</a> </button>
                 </div>
             </div>
         </div>
@@ -96,35 +102,36 @@
 
 
         <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-4 order-sm-last col-md-3">
+            <div class="col-12 col-sm-4 order-sm-first col-md-3">
                 <h3>This Month's Promotions</h3>
             </div>
-            <div class="col col-sm col-md">
+            <div class="col col-sm-5 col-md">
                 <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/buffet.png" alt="buffet">
                     <div class="media-body">
-                        <h2 class="mt-0">Weekend Grand Buffet</h2>
-                        <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five
+                        <h2 class="mt-0">Weekend Grand Buffet <span class="badge bg-danger">NEW</span></h2>
+                        <p class="d-none d-sm-block col-md-9">Featuring mouthwatering combinations with a choice of five
                             different salads, six enticing appetizers,
                             six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for
                             just
-                            $19.99 per person
+                            $19.99 per person 
                         </p>
                     </div>
                 </div>
-
-            </div>
+            </div><div class="col-md-3"> <img src="img/buffet.png" class="col-md-2 order-sm-last" alt="buffet" style="width:150px;height:150px;"></div>
         </div>
+
+        <!-- ALERT
         <div class="alert alert-warning alert-dismissible fade show" role="alert">
-            <strong>Offer!</strong> Best deals available
+            <strong>Offer!</strong> Best deals available today
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-          </div>
+          </div> -->
+
+
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>Meet our Culinary Specialists</h3>
             </div>
             <div class="col col-sm order-sm-first col-md">
-
                 <div class="media">
                     <img class="mr-3" src="img/alberto.png" alt="Generic placeholder image">
                     <div class="media-body">
@@ -136,6 +143,61 @@
                 </div>
             </div>
         </div>
+
+<!-- reserve table -->
+        <div class="row row-content align-items-center offset-xl-2 col-8"  id="myform" >
+            <div class="card">
+                <div class="card-header bg-warning fs-1 text-light mt-2 mb-3">Reserve a table
+                  </div><br>
+            <form>
+                <div class="form-group row">
+                    <label for="Geusts" class="col-md-2 col-form-label"><strong> Number of <br> Geusts</strong></label>
+                    <div class="col-md-10 ">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1">1</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2">2</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                            <label class="form-check-label" for="inlineRadio3">3 </label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1">4</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1">5</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1">6</label>
+                          </div>
+                    </div>
+                </div><br>
+
+                <div class="form-group row">
+                    <label for="dateandtime" class="col-12 col-md-2"><strong> Date and Time</strong></label>
+                    <div class="col-7 col-md-7 col-sm-12">
+                        <input type="date" class="form-control" id="date" name="date" placeholder="date">
+                    </div>
+                    <div class="col-5 col-md-3 col-sm-12">
+                        <input type="time" class="form-control" id="time" name="time" placeholder="time  hgdududg">
+                    </div>                    
+                </div><br>
+                <div class="form-group row">
+                    <div class="col-md-10 offset-2 mb-2">
+                        <button type="submit" class="btn btn-primary ">Reserve</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        </div>
+        
     </div>
 
     <!-- FOOTER -->
